@@ -3787,8 +3787,7 @@ riscv_option_override (void)
   /* We get better code with explicit relocs for CM_MEDLOW, but
      worse code for the others (for now).  Pick the best default.  */
   if ((target_flags_explicit & MASK_EXPLICIT_RELOCS) == 0)
-    if (riscv_cmodel == CM_MEDLOW)
-      target_flags |= MASK_EXPLICIT_RELOCS;
+    target_flags |= MASK_EXPLICIT_RELOCS;
 
   /* Require that the ISA supports the requested floating-point ABI.  */
   if (UNITS_PER_FP_ARG > (TARGET_HARD_FLOAT ? UNITS_PER_FP_REG : 0))
