@@ -15,6 +15,7 @@
 *.o
 *.pyc
 *.tmp
+*.a
 
 .deps
 .libs
@@ -50,8 +51,18 @@ lost+found
 LAST_UPDATED
 REVISION
 
+stamp-*
+*.stamp
+
 # ignore in-tree prerequisites
 /mpfr*
 /mpc*
 /gmp*
 /isl*
+
+tags
+cscope.in.out
+cscope.out
+cscope.po.out
+*.swp
+*.swo
